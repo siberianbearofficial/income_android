@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         passwordET.setBackgroundColor(Colors.getYellow(15));
         root.setBackgroundColor(Colors.getYellow(60));
 
-        setRightParams(); //TODO: REMOVE AFTER TESTING
+        // setRightParams(); //TODO: REMOVE AFTER TESTING
     }
 
     private void setRightParams() {
