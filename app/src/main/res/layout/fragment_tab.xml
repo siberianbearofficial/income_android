@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootOrangeTabFragment"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/yellow"
+    tools:context=".TabFragment">
+
+
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.15"
+        android:src="@drawable/analytics_graph"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutOrangeTabFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/erasmd"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/erasmd"
+                android:gravity="center"
+                android:text="@string/old_price"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/erasmd"
+                android:gravity="center"
+                android:text="@string/curr_price"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/erasmd"
+                android:gravity="center"
+                android:text="@string/count"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/oldPriceTV"
+                android:layout_width="120dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/erasmd"
+                android:gravity="center"
+                android:text="@string/test_price"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/currPriceTV"
+                android:layout_width="120dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/erasmd"
+                android:gravity="center"
+                android:text="@string/test_price"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/countTV"
+                android:layout_width="120dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/erasmd"
+                android:gravity="center"
+                android:text="@string/test_price"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/erasmd"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/edit_text_rounded"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/bargain" />
+
+        <TextView
+            android:id="@+id/bargainTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/erasmd"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_rounded"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/test_price" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/deleteCurrentTabButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/delete_button_png"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bgImage" />
+
+    <ImageButton
+        android:id="@+id/addCurrentToSummaryCheckBox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/checkbox_frame_png"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bgImage" />
+
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="0dp"
+        android:visibility="visible"
+        android:src="@drawable/tick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bgImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

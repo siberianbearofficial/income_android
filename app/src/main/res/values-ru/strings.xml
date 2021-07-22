@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Доход</string>
+    <string name="welcome_string">ПРИСТУПИМ</string>
+    <string name="name">ИМЯ</string>
+    <string name="bargain">ДОХОД</string>
+    <string name="test_price">-</string>
+
+    <string name="password">Пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="incorrect_credentials">Неверный email или пароль. Попробуйте еще раз</string>
+    <string name="incorrect_link">Некорректная ссылка, измените</string>
+    <string name="incorrect_name">Имя не должно быть пустым, и используйте _ вместо пробелов</string>
+    <string name="incorrect_count">Количество должно быть целым числом</string>
+    <string name="incorrect_oldprice">Старая цена должна быть дробным числом</string>
+    <string name="cleared">Информация удалена</string>
+    <string name="not_cleared">Информация не удалена</string>
+    <string name="unable">К сожалению, эта функция пока не доступна</string>
+    <string name="sign_up_toast">Чтобы зарегистрироваться, свяжитесь с разработчиком</string>
+    <string name="forgot_password_toast">На данный момент Вы никак не можете восстановить пароль. Свяжитесь с разработчиком для создания нового аккаунта</string>
+    <string name="empty">Пока здесь ничего нет :) Добавьте новые акции</string>
+    <string name="try_sign_out">Чтобы выйти, нажмите на розовую кнопку</string>
+
+    <string name="login">ВОЙТИ</string>
+    <string name="add">ДОБАВИТЬ</string>
+    <string name="yes">ДА</string>
+    <string name="no">НЕТ</string>
+
+    <string name="signup">Еще нет аккаунта? Зарегистрируйтесь бесплатно</string>
+    <string name="full_ver">Приобретите полную версию, чтобы разблокировать больше свободного места</string>
+
+    <string name="info_tab">Информация</string>
+    <string name="add_tab">ДОБАВЛЕНИЕ</string>
+    <string name="export_tab">ИНФОРМАЦИЯ ОБ ЭКСПОРТЕ</string>
+    <string name="delete_dialog">Удаление информации</string>
+
+    <string name="export_text">Вы точно хотите экспортировать Ваши данные в файл?</string>
+    <string name="delete_text">Вы точно хотите удалить всю информацию? Это действие необратимо</string>
+
+
+    <string name="old_price">Старая цена</string>
+    <string name="curr_price">Цена сейчас</string>
+    <string name="count">Количество</string>
+    <string name="whole_income">Весь доход</string>
+    <string name="web_link">Ссылка</string>
+
+    <string name="action_settings">Настройки</string>
+
+    <!--for export tab-->
+    <string name="subject">Ваш доход:</string>
+    <string name="tab_title">Поделиться доходом через</string>
+</resources>

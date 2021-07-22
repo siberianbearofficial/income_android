@@ -1,0 +1,222 @@
+@startuml
+
+title __FILETEST's Class Diagram__\n
+
+  namespace com.example.filetest {
+    class com.example.filetest.AddFragment {
+        - activity : Activity
+        - addButton : ImageButton
+        - countET : EditText
+        - mainIco : ImageView
+        - nameET : EditText
+        - oldPriceET : EditText
+        - webLinkET : EditText
+        + AddFragment()
+        {static} + newInstance()
+        + onCreate()
+        + onCreateView()
+        - closeFragment()
+        - onAddButtonClick()
+        - onCloseImageClick()
+        - setEnabledButtons()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.AuthHandler {
+        {static} - EMAIL_CORRECT : String
+        {static} - PASS_CORRECT : String
+        {static} + isAuthentificated()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.BlankFragment {
+        + BlankFragment()
+        {static} + newInstance()
+        + onCreate()
+        + onCreateView()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.ClearDialog {
+        + onCreateDialog()
+        - clearData()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.Colors {
+        {static} + blue : int
+        {static} + blueB : int
+        {static} + blueG : int
+        {static} + blueR : int
+        {static} + green : int
+        {static} + greenB : int
+        {static} + greenG : int
+        {static} + greenR : int
+        {static} + orange : int
+        {static} + orangeB : int
+        {static} + orangeG : int
+        {static} + orangeR : int
+        {static} + red : int
+        {static} + redB : int
+        {static} + redG : int
+        {static} + redR : int
+        {static} + rose : int
+        {static} + roseB : int
+        {static} + roseG : int
+        {static} + roseR : int
+        {static} + yellow : int
+        {static} + yellowB : int
+        {static} + yellowG : int
+        {static} + yellowR : int
+        {static} + getBlue()
+        {static} + getGreen()
+        {static} + getOrange()
+        {static} + getRed()
+        {static} + getRose()
+        {static} + getYellow()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.Consts {
+        {static} + COUNT : String
+        {static} + DOLLAR : String
+        {static} + EMAIL : String
+        {static} + GREEN_BG_IMAGE : int
+        {static} + NAME : String
+        {static} + NEEDED_CLASS : String
+        {static} + OLD_PRICE : String
+        {static} + ORANGE_BG_IMAGE : int
+        {static} + PASS : String
+        {static} + TRADES_FILE_NAME : String
+        {static} + URL : String
+        {static} + URL_SAMPLE : String
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.FileHandler {
+        {static} + addTrade()
+        {static} + clearTradesFile()
+        {static} + createFile()
+        {static} + getAllTrades()
+        {static} + removeTrade()
+        {static} - contains()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.HTTPHandler {
+        - handler : Handler
+        - url : String
+        + run()
+        ~ HTTPHandler()
+        - getPrice()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.LockableScrollView {
+        - enableScrolling : boolean
+        + LockableScrollView()
+        + LockableScrollView()
+        + LockableScrollView()
+        + isEnableScrolling()
+        + onInterceptTouchEvent()
+        + onTouchEvent()
+        + setScrollingEnabled()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.MainActivity {
+        - emailET : EditText
+        - passwordET : EditText
+        + forgotPassword()
+        + login()
+        + onBackPressed()
+        + signUp()
+        # onCreate()
+        - deleteButtonMethod()
+        - setRightParams()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.MainScreen {
+        - addButton : ImageButton
+        - deleteButton : ImageButton
+        - exportButton : ImageButton
+        - fragmentManager : FragmentManager
+        - fragmentTransaction : FragmentTransaction
+        - logoutButton : ImageButton
+        - refreshButton : ImageButton
+        + onBackPressed()
+        # onCreate()
+        - onAddButtonClick()
+        - onDeleteButtonClick()
+        - onExportButtonClick()
+        - onLogoutButtonClick()
+        - onRefreshButtonClick()
+        - setDisabledButtons()
+    }
+  }
+  
+
+  namespace com.example.filetest {
+    class com.example.filetest.TabFragment {
+        - bargain : float
+        - bargainTV : TextView
+        - count : int
+        - countTV : TextView
+        - currPrice : float
+        - currPriceTV : TextView
+        - handler : Handler
+        - nameTV : TextView
+        - oldPrice : float
+        - oldPriceTV : TextView
+        - random : Random
+        - trade : Bundle
+        + TabFragment()
+        {static} + newInstance()
+        + onCreate()
+        + onCreateView()
+        - colorBackground()
+        - getBargain()
+    }
+  }
+  
+
+  com.example.filetest.AddFragment -up-|> androidx.fragment.app.Fragment
+  com.example.filetest.BlankFragment -up-|> androidx.fragment.app.Fragment
+  com.example.filetest.ClearDialog -up-|> androidx.fragment.app.DialogFragment
+  com.example.filetest.HTTPHandler .up.|> java.lang.Runnable
+  com.example.filetest.LockableScrollView -up-|> android.widget.ScrollView
+  com.example.filetest.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.filetest.MainScreen -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.filetest.MainScreen o-- com.example.filetest.LockableScrollView : scrollView
+  com.example.filetest.TabFragment -up-|> androidx.fragment.app.Fragment
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Income</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="welcome_string">LET\'S GET STARTED</string>
+    <string name="slogan" translatable="false">Life starts\nwith money</string>
+    <string name="name">NAME</string>
+    <string name="bargain">INCOME</string>
+    <string name="test_price">-</string>
+
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="incorrect_credentials">Incorrect credentials, try again</string>
+    <string name="incorrect_link">Incorrect link, try again</string>
+    <string name="no_activity" translatable="false">No activity detected, try again</string>
+    <string name="incorrect_name">Name shouldn\'t be empty or contain spaces. Use _ instead</string>
+    <string name="incorrect_count">Count value should be integer</string>
+    <string name="incorrect_oldprice">Old price value should be float</string>
+    <string name="cleared">Data cleared</string>
+    <string name="not_cleared">Data wasn\'t cleared</string>
+    <string name="unable">Unfortunately, this future is unavailable now</string>
+    <string name="sign_up_toast">To sign up contact the developer</string>
+    <string name="forgot_password_toast">You can\'t restore your password now. Just contact the developer for creating new account</string>
+    <string name="empty">Nothing is here :)</string>
+    <string name="try_sign_out">To sign out press rose button</string>
+
+    <string name="login">LOG IN</string>
+    <string name="add">ADD</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <string name="signup">Still don\'t have account? Sign up for free</string>
+    <string name="full_ver">Purchase full version to unlock more space</string>
+
+    <string name="info_tab">Information</string>
+    <string name="add_tab">ADDING NEW INFO TAB</string>
+    <string name="export_tab">EXPORTING INFO</string>
+    <string name="delete_dialog">Clear data</string>
+
+    <string name="export_text">Do you really want to export current information into file?</string>
+    <string name="delete_text">Do you really want to clear your data? This action is irreversible</string>
+    <string name="link_hint" translatable="false">http://www.finam.ru/quote/moex-akcii/… </string>
+
+
+    <string name="old_price">Old price</string>
+    <string name="curr_price">Current price</string>
+    <string name="count">Count</string>
+    <string name="whole_income">Whole income</string>
+    <string name="web_link">Web link:</string>
+    <string name="title_activity_main_screen" translatable="false">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--for export tab-->
+    <string name="subject">Your income</string>
+    <string name="tab_title">Share your income via</string>
+</resources>

@@ -1,0 +1,5 @@
+name url old_price count (Этой строки не будет в реальном файле)
+EnelRos http://yandex.ru/ 12.6 14
+Gazprom http://google.ru/ 10.2 4
+LSR http://finam.ru/ 102.873 14
+Dnevnik http://dnevnik.mos.ru/ 1980 14
